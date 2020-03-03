@@ -8,6 +8,6 @@ namespace SweepStakes
 {
 	public static class UserInterface
 	{
-		
+
 	}
 }

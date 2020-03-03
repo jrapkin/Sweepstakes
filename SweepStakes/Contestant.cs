@@ -9,10 +9,13 @@ namespace SweepStakes
 	class Contestant
 	{
 		//member variables
-		private string firstName;
-		private string lastName;
-		private string emailAddress;
-		private int registrationNumber;
+		public string FirstName;
+		public string LastName;
+		public string EmailAddress;
+		public int RegistrationNumber;
+
+
+		
 
 		//ctor
 		public Contestant()

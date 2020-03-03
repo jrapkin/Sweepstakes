@@ -24,7 +24,8 @@ namespace SweepStakes
 		//member methods
 		public void RegisterContestant (Contestant contestant)
 		{
-			
+			contestant.RegistrationNumber = contestants.Count;
+			contestants.Add(contestant.RegistrationNumber, contestant);
 		}
 
 
