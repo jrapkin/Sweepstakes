@@ -8,15 +8,25 @@ namespace SweepStakes
 {
 	class Sweepstakes
 	{
-
-
-
-
-		//member methods
-
-		public void SetSweepstakes (string sweepstakesName)
+		//member variables
+		private string sweepstakesName;
+		public string SweepstakesName
 		{
-
+			get { return sweepstakesName; }
+			 
 		}
+		Dictionary<int, Contestant> contestants;
+		public Sweepstakes(string name)
+		{
+			sweepstakesName = name;
+			contestants = new Dictionary<int, Contestant>();
+		}
+		//member methods
+		public void RegisterContestant (Contestant contestant)
+		{
+			
+		}
+
+
 	}
 }
