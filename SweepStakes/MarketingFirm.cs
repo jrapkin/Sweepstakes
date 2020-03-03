@@ -8,5 +8,10 @@ namespace SweepStakes
 {
 	class MarketingFirm
 	{
+		public MarketingFirm(ISweepstakesManager manager, Random random)
+		{
+
+		}
 	}
+
 }

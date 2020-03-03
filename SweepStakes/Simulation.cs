@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-	class Simulation
+	class Simulation 
 	{
+		Random random;
+		MarketingFirm newFirm;
+
+		public void CreateMarketingFirmWithManager()
+		{
+
+		}
+
 	}
 }

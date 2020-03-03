@@ -25,13 +25,14 @@ namespace SweepStakes
 
 		private void RetrieveContestantInformation()
 		{
-			UserInterface.DisplayMessage("Please enter your first name:");
+			UserInterface.DisplayMessage("Please enter contestant first name:");
 			FirstName = UserInterface.TakeUserInput();
-			UserInterface.DisplayMessage("Please enter your last name:");
+			UserInterface.DisplayMessage("Please enter contestant last name:");
 			LastName = UserInterface.TakeUserInput();
-			UserInterface.DisplayMessage("Please enter your email address:");
+			UserInterface.DisplayMessage("Please enter contestant a email address:");
 			EmailAddress = UserInterface.TakeUserInput();
 		}
-
+		
+		
 	}
 }
