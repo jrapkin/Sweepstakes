@@ -26,7 +26,9 @@ namespace SweepStakes
 		{
 			contestant.RegistrationNumber = contestants.Count;
 			contestants.Add(contestant.RegistrationNumber, contestant);
-		}
+		} 
+
+
 
 
 	}

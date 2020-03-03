@@ -8,6 +8,21 @@ namespace SweepStakes
 {
 	public static class UserInterface
 	{
+		public static void DisplayMessage(string message)
+		{
+			Console.WriteLine();
+		}
+
+		public static void DisplayMessage(string message, Contestant contestant)
+		{
+			Console.WriteLine();
+		}
+		public static string TakePlayerInput()
+		{
+			string userInput = Console.ReadLine();
+			
+			return userInput;
+		}
 
 	}
 }
