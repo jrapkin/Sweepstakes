@@ -10,13 +10,9 @@ namespace SweepStakes
 	{
 		public static void DisplayMessage(string message)
 		{
-			Console.WriteLine();
+			Console.WriteLine(message);
 		}
 
-		public static void DisplayMessage(string message, Contestant contestant)
-		{
-			Console.WriteLine();
-		}
 		public static string TakeUserInput()
 		{
 			string userInput = Console.ReadLine();

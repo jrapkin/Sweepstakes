@@ -20,7 +20,17 @@ namespace SweepStakes
 		//ctor
 		public Contestant()
 		{
-			
+			RetrieveContestantInformation();
+		}
+
+		private void RetrieveContestantInformation()
+		{
+			UserInterface.DisplayMessage("Please enter your first name:");
+			FirstName = UserInterface.TakeUserInput();
+			UserInterface.DisplayMessage("Please enter your last name:");
+			LastName = UserInterface.TakeUserInput();
+			UserInterface.DisplayMessage("Please enter your email address:");
+			EmailAddress = UserInterface.TakeUserInput();
 		}
 
 	}
