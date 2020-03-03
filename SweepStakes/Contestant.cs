@@ -17,9 +17,8 @@ namespace SweepStakes
 		//ctor
 		public Contestant()
 		{
-
+			
 		}
 
-		//member methods
 	}
 }

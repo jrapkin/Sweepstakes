@@ -8,5 +8,15 @@ namespace SweepStakes
 {
 	class Sweepstakes
 	{
+
+
+
+
+		//member methods
+
+		public void SetSweepstakes (string sweepstakesName)
+		{
+
+		}
 	}
 }
