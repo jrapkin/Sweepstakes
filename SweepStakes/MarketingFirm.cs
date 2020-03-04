@@ -13,7 +13,6 @@ namespace SweepStakes
 		public MarketingFirm(ISweepstakesManager sweepstakesManager)
 		{
 			manager = sweepstakesManager;
-			
 		}
 		public void CreateSweepstakes()
 		{

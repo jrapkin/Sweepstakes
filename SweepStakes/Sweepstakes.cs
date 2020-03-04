@@ -8,7 +8,6 @@ namespace SweepStakes
 {
 	class Sweepstakes
 	{
-
 		private string sweepstakesName;		
 		private Dictionary<int, Contestant> contestants;
 		Random random;
@@ -24,8 +23,8 @@ namespace SweepStakes
 		}
 		public void RegisterContestant (Contestant contestant)
 		{
-			contestant.RegistrationNumber = contestants.Count +1;
-			contestants.Add(contestant.RegistrationNumber, contestant);
+			contestant.registrationNumber = contestants.Count +1;
+			contestants.Add(contestant.registrationNumber, contestant);
 			potentialWinnerPool++;
 		}
 		public Contestant PickWinner()
@@ -36,7 +35,7 @@ namespace SweepStakes
 		}
 		public void PrintContestantInformation(Contestant contestant)
 		{
-			UserInterface.DisplayMessage($"Contestant information: \n Name: {contestant.FirstName} {contestant.LastName} \n Email: {contestant.EmailAddress}, \n Contestant ID: {contestant.RegistrationNumber}.");
+			UserInterface.DisplayMessage($"Contestant information: \n Name: {contestant.firstName} {contestant.lastName} \n Email: {contestant.emailAddress}, \n Contestant ID: {contestant.registrationNumber}.");
 		}
 	}
 }

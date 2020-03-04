@@ -15,7 +15,6 @@ namespace SweepStakes
 		public static string TakeUserInput()
 		{
 			string userInput = Console.ReadLine();
-
 			return userInput;
 		}
 	}

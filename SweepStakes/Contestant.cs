@@ -8,10 +8,10 @@ namespace SweepStakes
 {
 	public class Contestant
 	{
-		public string FirstName;
-		public string LastName;
-		public string EmailAddress;
-		public int RegistrationNumber;
+		public string firstName;
+		public string lastName;
+		public string emailAddress;
+		public int registrationNumber;
 		public Contestant()
 		{
 			SetContestantInformation();
@@ -19,11 +19,11 @@ namespace SweepStakes
 		private void SetContestantInformation()
 		{
 			UserInterface.DisplayMessage("Please enter contestant first name:");
-			FirstName = UserInterface.TakeUserInput();
+			firstName = UserInterface.TakeUserInput();
 			UserInterface.DisplayMessage("Please enter contestant last name:");
-			LastName = UserInterface.TakeUserInput();
+			lastName = UserInterface.TakeUserInput();
 			UserInterface.DisplayMessage("Please enter contestant a email address:");
-			EmailAddress = UserInterface.TakeUserInput();
+			emailAddress = UserInterface.TakeUserInput();
 		}
 	}
 }
