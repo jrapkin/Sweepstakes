@@ -8,30 +8,31 @@ namespace SweepStakes
 {
 	class Simulation 
 	{
-		Random random;
-		MarketingFirm newFirm;
-		SweepstakesQueueManager queue;
-		SweepstakesStackManager stack;
+		private MarketingFirm newFirm;
+		private SweepstakesQueueManager queue;
+		private SweepstakesStackManager stack;
 
 		public void CreateMarketingFirmWithManager()
 		{
-			bool firmIsDeciding = true;
+			bool isAValidInput = false;
 			do
 				switch (UserInterface.TakeUserInput().ToLower())
 				{
 					case "1":
 					case "queue":
-						newFirm = new MarketingFirm(queue, random);
-						firmIsDeciding = false;
+						newFirm = new MarketingFirm(queue);
+						isAValidInput = true;
 						break;
 					case "2":
 					case "stack":
-						newFirm = new MarketingFirm(stack, random);
-						firmIsDeciding = false;
+						newFirm = new MarketingFirm(stack);
+						isAValidInput = true;
+						break;
+					default:
+						UserInterface.DisplayMessage("Not a valid input, please choose stack or queue.");
 						break;
 				}
-			while (firmIsDeciding == true);
+			while (isAValidInput == false);
 		}
-
 	}
 }

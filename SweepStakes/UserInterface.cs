@@ -12,17 +12,11 @@ namespace SweepStakes
 		{
 			Console.WriteLine(message);
 		}
-		public static void DisplayMessage(string message, int userID, Contestant contestant)
-		{ 
-			Console.WriteLine(message);
-			Console.WriteLine(userID);
-		}
 		public static string TakeUserInput()
 		{
 			string userInput = Console.ReadLine();
 
 			return userInput;
 		}
-
 	}
 }

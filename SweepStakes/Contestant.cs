@@ -8,22 +8,15 @@ namespace SweepStakes
 {
 	public class Contestant
 	{
-		//member variables
 		public string FirstName;
 		public string LastName;
 		public string EmailAddress;
 		public int RegistrationNumber;
-
-
-		
-
-		//ctor
 		public Contestant()
 		{
-			RetrieveContestantInformation();
+			SetContestantInformation();
 		}
-
-		private void RetrieveContestantInformation()
+		private void SetContestantInformation()
 		{
 			UserInterface.DisplayMessage("Please enter contestant first name:");
 			FirstName = UserInterface.TakeUserInput();
@@ -32,7 +25,5 @@ namespace SweepStakes
 			UserInterface.DisplayMessage("Please enter contestant a email address:");
 			EmailAddress = UserInterface.TakeUserInput();
 		}
-		
-		
 	}
 }

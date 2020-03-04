@@ -8,18 +8,17 @@ namespace SweepStakes
 {
 	class MarketingFirm
 	{
-		Sweepstakes newSweepstakes;
-		ISweepstakesManager manager;
-		public MarketingFirm(ISweepstakesManager sweepstakesManager, Random random)
+		public Sweepstakes newSweepstakes;
+		private ISweepstakesManager manager;
+		public MarketingFirm(ISweepstakesManager sweepstakesManager)
 		{
 			manager = sweepstakesManager;
+			
 		}
-
 		public void CreateSweepstakes()
 		{
 			UserInterface.DisplayMessage("What would you like to name your sweepstakes?");
 			newSweepstakes = new Sweepstakes(UserInterface.TakeUserInput());
 		}
 	}
-
 }
